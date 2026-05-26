@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor Clone</title>
+
+  <style>
+    
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f5f5f5;
+    }
+
+   
+
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 80px;
+      background:white;
+      border-bottom:3px solid #ddd;
+    }
+
+    .logo img{
+      width:200px;
+      height:auto;
+      border-radius:50px;
+    }
+
+    .menu{
+      display:flex;
+      gap:50px;
+      align-items:center;
+    }
+
+    .menu a{
+      text-decoration:none;
+      color:black;
+      font-weight:bold;  
+    }
+    .login-btn{
+      text-decoration:none;
+      padding:30px 25px;
+      background:black;
+      color:white;
+      border: none;
+      border-radius:30px;
+      cursor:pointer;
+      font-weight:bold;
+    }
+
+    /* next section */
+
+    .abc{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:80px;
+      gap:50px;
+    }
+
+    .left{
+      width:50%;
+      text-align:left;
+    }
+
+    .left h1{
+      font-size:60px;
+      color:#1f3bb3;
+      margin-bottom:25px;
+      line-height:1.6;
+    }
+
+    .left p{
+      font-size:22px;
+      line-height:1.7;
+      color:#333;
+      margin-bottom:35px;
+    }
+
+    .start-btn{
+      text-decoration:none;
+      padding:30px 40px;
+      background:#ff2e63;
+      color:white;
+      border:none;
+      border-radius:10px;
+      font-size:20px;
+      font-weight:bold;
+      cursor:pointer;
+      letter-spacing:10px;
+    }
+
+    .right{
+      width:50%;
+      text-align:right;
+      
+    }
+
+    .right img{
+      width:100%;
+      border-radius:10px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+
+    <div class="logo img">
+      <img src="./Screenshot_26-5-2026_144155_connect.theoppty.com.jpeg" alt="banner image">
+    </div>
+
+    <div class="menu">
+      <a href="#">PREMIUM</a>
+      <a href="#">CHALLENGES</a>
+      <a href="#">SOLUTIONS</a>
+      <a href="#">RESOURCES</a>
+</div>
+  <div>
+    <a href="https://github.com/login" class="login-btn" target="_blank">
+        Login with GitHub
+      </a>
+  </div>
+  </nav>
+  </header>
+
+  <section class="abc">
+
+    <div class="left">
+
+      <h1>
+        Improve your front-end coding skills by building real projects
+      </h1>
+
+      <p>
+        Solve real-world HTML, CSS and JavaScript challenges while
+        working to professional designs.
+      </p>
+
+      <button>
+     <a href="./Screenshot_26-5-2026_144155_connect.theoppty.com.jpeg" target="_blank"
+      class="start-btn">
+        start coding</a>
+      </button>
+
+    </div>
+
+    <div class="right">
+
+      <img src="./Screenshot_26-5-2026_144155_connect.theoppty.com.jpeg" alt="team image">
+
+    </div>
+
+  </section>
+
+</body>
+</html>
