@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food menu</title>
+</head>
+<style>
+
+    body{
+        background-image:url(./restaurant-menu-white-background-with-embossed-golden-letters-and-lines-and-mountain-emblem-deluxe-2KF6P34.jpg);
+        background-attachment: fixed;
+    /* background: #2A7B9B;
+background: radial-gradient(circle, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);; */
+    }
+ 
+
+    /* Container */
+
+.A{
+  background:white;
+  border-radius:50px;
+  padding:60px 60px;
+}
+
+/* nav bar */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border: 10px solid salmon;
+  border-radius: 30px;
+  
+}
+
+.logo{
+  font-size:30px;
+  font-weight:bold;
+}
+
+.nav-links{
+  display:flex;
+  font-weight: bolder;
+  gap:20px;
+  font-size: larger;
+  padding: 10px 10px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:black;
+ 
+}
+
+.nav-btns{
+  display:flex;
+  gap:80px;
+}
+
+.btn-A{
+  padding:10px 30px;
+  font-size: larger;
+  font-weight: bolder;
+  border:3px solid #333;
+  border-radius:20px;
+  background:white;
+  cursor:pointer;
+
+}
+
+.btn-login{
+  padding:10px 20px;
+  border:none;
+  border-radius:20px;
+  background:#f7b733;
+  cursor:pointer;
+}
+
+    /* Top section */
+
+    .main{
+        display: flex;
+        justify-content: space-between;
+        align-items : center;
+        
+    }
+.mainheading{
+  width:50%;
+}
+
+.mainheading h1{
+  font-size:42px;
+  margin-bottom:20px;
+}
+
+.mainheading p{
+  color:#666;
+  line-height:2.4;
+  font-weight: bolder;
+}
+
+.ordernow-btn{
+  margin-top:10px;
+  padding:20px 30px;
+  border:none;
+  border-radius:10px;
+  background:#f7b733;
+  font-size:16px;
+  cursor:pointer;
+}
+
+.mainright img{
+  width:450px;
+  margin-top:20%;
+  border-radius:50%;
+}
+
+/* menu section */
+
+.menu{
+    margin-top:80px;
+}
+.menu-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:40px;
+}
+
+.bottomright{
+  display:flex;
+  gap:15px;
+}
+
+.bottomright button{
+  font-size: larger;
+  font-weight: bolder; 
+  padding:10px 25px;
+  border-radius:20px;
+  border:3px solid #333;
+  border-radius: 30%;
+  background:white;
+  cursor:pointer;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.bottomright .active{
+  background:#f7b733;
+  border:none;
+}
+.food{
+  display:flex;
+  gap:30px;
+}
+
+.image{
+  text-align:center;
+}
+
+.image img{
+    
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+.image h3{
+  margin-top:20px;
+}
+
+.image p{
+  margin-top:10px;
+  color:#555;
+}
+
+</style>
+<body>
+    <div class="A">
+
+   
+    <nav class="navbar">
+      
+        <div class="logo">🍔 Food</div>
+
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Menu</a>
+        <a href="#">Foods</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="nav-btns">
+        <button class="btn-A">Sign In</button>
+        <button class="btn-A">Sign Up</button>
+        <button class="btn-login">Login</button>
+      </div>
+    
+    </nav>
+
+    <section class="main">
+        <div class="mainheading">
+            <h1>
+                Discover Our Delectable Delights Menu
+            </h1>
+        
+        
+            <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, accusamus eius voluptate natus eum architecto odit quia, modi inventore, beatae fugiat molestias explicabo. Vero, dolorem asperiores. Numquam ea iure mollitia?
+            </p>
+            <button class="ordernow-btn">Order now</button>
+        </div>
+        <div class="mainright">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600" alt="FOOD IMG">
+        </div>
+    </section>
+
+    <!-- next section -->
+
+      <section class="menu">
+
+      <div class="menu-head">
+        <div>
+          <h2>Our Food Menu</h2>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+
+        <div class="bottomright">
+          <button class="active">All</button>
+          <button>Breakfast</button>
+          <button>Dinner</button>
+          <button>Lunch</button>
+        </div>
+      </div>
+     
+
+      <div class="food">
+
+        <div class="image">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400">
+          <h3>Chicken Steak</h3>
+          <p>⭐⭐⭐⭐⭐ $38.00</p>
+        </div>
+
+        <div class="image">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400">
+          <h3>Burger</h3>
+          <p>⭐⭐⭐⭐⭐ $35.00</p>
+        </div>
+
+        <div class="image">
+          <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=400">
+          <h3>Healthy Food</h3>
+          <p>⭐⭐⭐⭐⭐ $25.00</p>
+        </div>
+
+        <div class="image">
+          <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=400">
+          <h3>Crispy Chicken</h3>
+          <p>⭐⭐⭐⭐⭐ $13.00</p>
+        </div>
+
+      </div>
+
+
+      
+      </section>
+</div>
+</body>
+</html>
