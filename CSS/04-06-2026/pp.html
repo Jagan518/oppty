@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FONTS&DISPLAY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC+Guides&display=swap" rel="stylesheet">
+</head>
+<style>
+
+    
+    body {
+      /* font-family: 'Poppins', sans-serif; */
+      padding: 30px;
+    }
+
+    h1 {
+      font-size: 50px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    
+    
+    .A {
+      display:block;
+      border: 2px solid black;
+      background: rgb(9, 164, 216);
+      margin: 10px;
+    }
+
+    .B {
+      display: inline;
+      background: rgb(6, 253, 6);
+    }
+
+    .C{
+      display: inline-block;
+      width:300px;
+      height: 100px;
+      background: orange;
+       margin: 40px;
+       text-align:center;
+       padding: 50px;
+     }
+
+     .D{
+        display: list-item;
+        margin-left: 20px;
+     }
+
+    .none {
+      display:none;
+    }
+
+   
+
+    
+    
+    .table {
+      display: table;
+      border: 2px solid black;
+      margin: 50px;
+    }
+
+    .tr {
+      display: table-row;
+
+
+    }
+
+    .td {
+      display: table-cell;
+      border: 2px solid black;
+      padding: 20px;
+    }
+
+       
+
+   
+
+    
+    .flex {
+      display:flex;
+      gap:20px;
+      margin-top:50px;
+    }
+
+    .ff {
+      background: skyblue;
+      padding: 20px;
+      flex: 1;
+      flex-direction: row;
+      text-align: center;
+    }
+
+    .mm{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 50px;
+        gap: 20px;
+        
+
+    }
+    .M{
+        color: white;
+        /* margin-top: 30px; */
+        background-color: rgb(35, 11, 166);
+        padding: 20px;
+    }
+
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .gg {
+      background: pink;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .cont{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .hide{
+        visibility: hidden;
+    }
+
+
+</style>
+<body>
+   <h1>hello world !!</h1>
+
+   <div class="A"> JAGAN </div>
+
+   <div class="B"> this is inline(HEIGHT/WIDTH IS NOT TAKEN)</div>
+
+   <DIV CLASS="C">THIS IS A INLINE BLOCK(HEIGHT/WIDTH ARE TAKEN)</DIV>
+
+   <div class>
+    <div class="D">display</div>
+    <div class="D">display</div>
+    <div class="D">display</div>
+    <div class="D">display</div>
+   </div>
+
+    <div class="none">display:none</div>  <!-- This won't be visible -->
+  
+  
+
+    <div class="table">
+    <div class="tr">
+      <div class="td">Name</div>
+      <div class="td">Age</div>
+    </div>
+    <div class="tr">
+      <div class="td">Jagan</div>
+      <div class="td">21</div>
+    </div>
+  </div>
+
+
+  <h2>Flexbox</h2>
+
+  <div class="flex">
+    <div class="ff">A</div>
+    <div class="ff">B</div>
+    <div class="ff">C</div>
+  </div>
+
+  <div class="mm">
+    <div class="M">1</div>
+    <div class="M">2</div>
+    <div class="M">3</div>
+
+  </div>
+
+
+
+
+  <h2>Grid</h2>
+
+  <div class="grid">
+    <div class="gg">1</div>
+    <div class="gg">2</div>
+    <div class="gg">3</div>
+    <div class="gg">4</div>
+    <div class="gg">5</div>
+    <div class="gg">6</div>
+  </div>
+
+  <div class="cont">
+    <div class="C">A</div>
+    <div class="C">B</div>
+    <div class="C">C</div>
+    <div class="C">D</div>
+    <div class="C">D</div>
+    <div class="C">F</div>
+    <div class="C">G</div>
+    <div class="C">H</div>
+    <div class="C">I</div>
+    <div class="C">J</div>
+ </div>
+
+ <div>FIRST</div>
+ <div class="hide">SECOND</div>
+ <div>THIRD</div>
+ <div>FOURTH</div>
+
+    
+</body>
+</html>
