@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="task.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <style>
+        body{
+           background-color:black;
+        }
+nav{
+
+    background:#021b4d;
+    color:white;
+    padding:40px;
+    font-size: 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav ul{
+    display:flex;
+    list-style: none;
+    text-decoration: none;
+    /* text-decoration: underline; */
+    gap:30px;
+    justify-content: space-between;
+    color: white;
+}
+
+nav a{
+    color:white;
+    
+    text-decoration:none;
+
+}
+
+nav a:hover{
+    color:yellow;
+    /* text-decoration: dotted; */
+    text-decoration: underline;
+}
+
+
+
+
+.A{
+    display: flex;
+    /* margin: 50px; */
+    
+    padding: 50px;
+    background-color: plum;
+   gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.A img{
+    /* right: 50px; */
+   width: 400px;
+    margin-right:100px;
+    /* margin: 50px; */
+    border-radius:50px;
+    border: 10px solid white;
+}
+.A h3{
+    color: #04369b;
+}
+.A p{
+    font-size: 20px ;
+   word-spacing:2px;
+   line-height: 1.9;
+}
+
+.A button{
+     padding: 20px;
+    border:none;
+    background:blueviolet;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+    
+}
+.A button:hover{
+    background: red;
+}
+
+
+
+.skills{
+    padding:50px;
+    text-align:center;
+    background-color:white;
+    
+
+}
+
+.skills h2{
+    margin-bottom:30px; 
+    /* border: 5px dotted black; */
+    display: inline;
+    border-radius: 50px;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.a{
+    padding: 50px;
+    /* border: 2px solid black; */
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(1px,1fr));
+    gap:30px;
+}
+
+.aa1{
+    background:white;
+    padding:50px;
+    border-radius:20px;
+    box-shadow:20px 20px 50px black;
+    
+}
+
+.aa1 i{
+    font-size:80px;
+    margin-bottom:15px;
+    color:rgb(12, 12, 111);
+    color: rgb(192, 27, 27);
+}
+
+.aa1:hover{
+    /* transform:translateY(-50px); */
+    transform:translatex(-100px);
+    transition:0.9s;
+}
+
+
+.projects{
+    background:#fff7d6;
+    padding:50px;
+    text-align:center;
+}
+
+.projects h2{
+    margin-bottom:30px;
+    text-decoration: underline;
+}
+
+.B{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.bb1{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    
+}
+
+.bb1 img{
+    width:100%;
+   margin-bottom: 20px;
+    border-radius:10px;
+}
+
+.bb1 h3{
+    margin:30px ; 
+    font-size: xx-large;
+}
+
+.bb1 p{
+    margin-bottom:15px; 
+   font-size: xx-large;
+} 
+
+.bb1 button{
+    padding:10px 20px;
+    border:none;
+    background:blueviolet;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+   margin-top: 30px;
+}
+
+.bb1:hover{
+     transform:translatey(20px);
+     transition:0.9s;
+     transform: scale(2px)
+    /* transition:0.9s; */
+    
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+}
+
+.contact{
+    padding:50px ;
+    background:#ccc;
+    text-align:center;
+}
+
+.contact h2{
+    margin-bottom:30px;
+    text-decoration: underline;
+    font-size: xx-large;
+    
+
+}
+
+
+
+
+form{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    height:100px;
+}
+
+
+.contact button{
+    margin-top: 20px;
+    padding: 20px;
+    background:blueviolet;
+    color:white;
+    border:none;
+    cursor:pointer;
+    
+}
+
+.contact button:hover{
+    background:black;
+    transform: scale(1.7);
+}
+
+
+
+footer{
+    background:#021b4d;
+    color:white;
+    padding:50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.icons i{
+    margin-left:55px;
+    cursor:pointer;
+    font-size: 50px;
+    transition:0.2s;
+}
+
+.icons i:hover{
+    color:yellow;
+    transform:scale(1.2);
+}
+
+    
+
+
+
+
+
+    </style>
+    <nav>
+        
+            PORTFOLIO
+       
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">SERVICES</a></li>
+            <li><a href="">PROJECTS</a></li>
+            <li><a href="">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <section class="A">
+        <div clas="aa">
+            <img src="./Alex-Pretti-012526-2-750d486a97134c3fa48e5882709769d8.jpg" alt="imge"> <br>
+        </div>
+        <div>
+            <h1>Hi,I'm Alex </h1>
+            <h3>Frontend Developer</h3>
+            <p>I build responsive and user friendly websites  <br>
+                using HTML,CSS,Java Script and mordern <br>
+                tools.
+            </p>
+            <button class="hire">HIRE ME</button>
+        </div>
+
+    </section>
+
+  <section class="skills">
+
+        <h2>MY SKILLS</h2>
+
+        <div class="a">
+
+            <div class="aa1">
+                <i class="fa-brands fa-html5"></i>
+                <h3>HTML</h3>
+            </div>
+
+            <div class="aa1">
+                <i class="fa-brands fa-css3-alt"></i>
+                <h3>CSS</h3>
+            </div>
+
+            <div class="aa1">
+                <i class="fa-brands fa-js"></i>
+                <h3>JavaScript</h3>
+            </div>
+
+            <div class="aa1">
+                <i class="fa-brands fa-bootstrap"></i>
+                <h3>Bootstrap</h3>
+            </div>
+
+            <div class="aa1">
+                <i class="fa-brands fa-react"></i>
+                <h3>React</h3>
+            </div>
+
+            <div class="aa1">
+                <i class="fa-brands fa-git-alt"></i>
+                <h3>Git</h3>
+            </div>
+
+        </div>
+    </section>
+    
+    <section class="projects">
+
+        <h2>PROJECTS</h2>
+
+        <div class="B">
+
+            <div class="bb1">
+                <img src="./download (1).webp" alt="">
+                <h3>Portfolio Website</h3>
+                <p>Personal portfolio using HTML and CSS.</p>
+                <button>VIEW PROJECT</button>
+            </div>
+
+            <div class="bb1">
+                <img src="./download.webp" alt="">
+                <h3>Dashboard</h3>
+                <p>Admin dashboard with charts and analytics.</p>
+                <button>VIEW PROJECT</button>
+            </div>
+
+            <div class="bb1">
+                <img src="./Ecommerce-Website-Design-Feature-Image-scaled.webp" alt="">
+                <h3>E-Commerce Site</h3>
+                <p>Responsive shopping website.</p>
+                <button>VIEW PROJECT</button>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="contact">
+        <h2>CONTACT ME</h2>
+        <form action="submit">
+            <input type="text" placeholder="Enter your name">
+            <input type="text" placeholder="YOUR EMAIL">
+            <input type="text" placeholder="YOUR MESSAGE"></input>
+           
+        </form>
+         <button>SEND MESSAGE</button>
+    </section>
+
+    <FOOTER>
+        
+        <P>&copy; 2026 ALEX Portfolio,ALL Rights Reserved.</P>
+
+         <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
+
+    </FOOTER>
+</body>
+</html>
