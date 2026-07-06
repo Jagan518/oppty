@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header{
+        display:flex;
+        align-items: center;
+        text-align: center;
+        width:100%;
+        height:100px;
+        background-color:rgb(245, 245, 245);
+        
+    }
+    header a{
+        margin-left: 100px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+    }
+    .main h1{
+        text-align:center;
+        margin:50px ;
+        color:black;
+        font-size:50px;
+        font-weight:bolder;
+    }
+    .main p{
+       
+        line-height: 2;
+        font-size:50px;
+        color:black;
+    }
+    .card{
+        width:300px;
+        height:300px;
+        gap:50px;
+        align-items:center;
+        background-color:blue;
+        position:relative;
+        display:inline-block;
+        margin:10px;
+        animation: myAnimation 2s ease-in-out infinite alternate;
+        
+    }
+    .box{
+        width:300px;
+        height:300px;
+        margin: 50px;
+        /* margin-top: 100px; */
+        
+        /* align-items:center; */
+        background-color:blue;
+        position:relative;
+        
+        /* display:inline-block; */
+       
+        
+        animation: myAnimation 2s ease-in-out infinite alternate;
+    }
+    .flex{
+        display: flex;
+    }
+     h3::before{
+        content: "<>,<>,<>";
+        color: brown;
+        font-size: 50px;
+    }
+    h2::after{
+        content:"///////??????";
+        /* position: absolute;
+        height: 100%;
+        width: 100%; */
+        background-color: aquamarine;
+    }
+    
+    .A{
+        background-color:red;
+        border-radius: 50%;
+        border-top: 5px solid black;
+        animation:myAnimation2 5s ease-in infinite alternate;
+        
+    }
+    /* .B{
+        background-color:green;
+        animation:myAnimation3 2s ;
+    } */
+    .B{
+        background-color:green;
+        animation:myAnimation3 2s ease-in-out infinite alternate;
+    }
+    .C{
+        background-color:purple;
+        border-radius: 50%;
+        animation:myAnimation4 3s ease infinite alternate;
+        
+    }
+    .J{
+        width:100%;
+        height:400px;
+        margin-top: 100px;
+        position:relative;
+        align-items:center;
+        display:flex;
+        background-color:yellow; 
+        animation:myAnimation4 5s ease-in infinite alternate;
+    }
+    .D{
+        background-color:orange;
+        position:relative;
+        animation:myAnimation5 4s ease-in-out infinite forwards;
+        margin-left: 100px;
+    }
+    .container{
+        border: 5px solid black;
+        display: block;
+    }
+
+    .E{
+        border-radius: 20px;
+        animation: myAnimation6 2s ease-in-out infinite alternate-reverse ;
+
+    }
+    
+    @keyframes myAnimation6 {
+      0%{
+        transform:translateY(0px);
+      }
+      50%{
+        transform:translateY(100px)
+        
+      }
+      100%{
+        transform:translateY(0px);
+      }
+    } 
+
+    @keyframes myAnimation5 {
+      0%{
+        transform:rotate(0deg); ;
+
+        
+      }
+      30%{
+        background-color: black;
+        transform:rotate(180deg) ;
+        
+      }
+      60%{
+        border-radius: 90%;
+      }
+      100%{
+        transform: translateX(300px) rotate(3deg) ;
+        
+      }
+    }
+
+    
+
+    @keyframes myAnimation2 {
+      0%{
+        
+        transform:rotate(0deg);
+        
+      }
+        50%{
+           background-color:orange;
+
+        }
+      100%{
+       
+        transform:rotate(360deg);
+      }  
+    }
+
+     @keyframes myAnimation3 {
+      0%{
+        scale:1;
+        opacity: 1;
+
+      }
+        50%{
+           background-color:lightgreen;
+        }
+      100%{
+       
+        scale:0.5;
+        opacity: 0;
+      }  
+    } 
+@keyframes myAnimation4 {
+    10%{
+        background-color: aqua;
+        transform: scale3d(0,1,2);
+    }
+    50%{
+        height: 60px;
+        
+        background-color: red;
+    }
+    
+}
+   
+
+/*     
+     @keyframes myAnimation4 {
+      0%, 20%, 53%, 80%, 100% {
+        transform: translate3d(0, 0, 0);
+        
+    }
+    40%, 43% {
+        transform: translate3d(0, -50px, 0);
+       
+    }
+    70% {
+        transform: translate3d(0, -55px, 0);
+        
+    }
+    90% {
+        transform: translate3d(0, -40px, 0);
+    }
+} */
+
+
+    /* @keyframes myAnimation4 {
+      0%{
+        transform:translateY(0px);
+      }
+      50%{
+        transform:translateY(-100px);
+      }
+      100%{
+        transform:translateY(0px);
+      }
+    } */
+
+.footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+
+
+</style>
+<body>
+    <header>
+    <nav>
+        <a href="#">HOME</a>
+        <a href="#">Animations</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    </header>
+
+    <div class="main">
+        <h1>Animations</h1>
+        <!-- Animations in CSS allow you to create dynamic and engaging user experiences by animating elements on a webpage. They can be used to enhance visual appeal, provide feedback, and guide user interactions. Here are some key concepts to understand when working with CSS animations: -->
+<p>
+Key concepts to remember:
+<br>
+Transitions: Smooth changes between CSS property values, triggered by state changes
+Animations: More complex sequences of changes defined with keyframes <br>
+Timing Functions: Control the acceleration and deceleration of animations <br>
+Transforms:  Modify elements in 2D or 3D space without affecting layout
+
+Performance: Use hardware-accelerated properties like transform and opacity for smooth animations
+
+<!-- When using transitions and animations, consider accessibility by respecting user preferences for reduced motion and ensuring animations don't cause seizures or discomfort. -->
+        </p>
+    </div>
+
+   <section class="container">
+
+    <div class="card A"><!-- <input type="text" placeholder="Enter your name;"> --></div>
+    <div class="card B"></div>
+    <div class="card C"></div>
+    <div class="card D"></div>
+
+    </section >
+
+    <section class="flex">
+    <div class="box">
+        <h3>before</h3>
+    </div>
+    <div class="box E">
+        
+        
+    </div>
+    <div class="box">
+        <h2>AFTER</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam exercitationem, vel cumque pariatur non sequi nam, accusamus possimus cum, officia reiciendis. Inventore modi magnam vero consectetur, accusamus at sunt perferendis.</p>
+</div>
+   
+    <div class="box"></div>
+
+</section>
+
+<div class="footer">
+
+<h5>&copy; 2026 News Website | All Rights Reserved</h5>
+
+</div>
+
+
+</body>
+</html>
