@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f5f5f5;
+        }
+
+        
+
+        .nav{
+            width:100%;
+            height:100px;
+            background:#222;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+          
+        }
+
+        .logo{
+            color:white;
+            font-size:30px;
+            font-weight:bold;
+        }
+
+        .nav a{
+            color:white;
+            text-decoration:none;
+            margin:20px;
+            font-size:18px;
+           
+        }
+        /* .nav a::before{
+            content: "*";
+            padding: 20px;
+            font-size: xx-large;
+            color: red;
+           } */
+
+        .nav a:hover{
+            color:#FD5200;
+            justify-content: space-around;
+            
+            font-size: xx-large;
+            
+        }
+
+
+        
+
+        .home{
+            height:100vh;
+            background:url("./134345685_9764d489-add8-4033-b052-fde0b79fbaa6.jpg")
+            center/cover;
+            display:flex;
+            justify-content:flex-end;
+            align-items:center;
+            padding-right:100px;
+        }
+
+
+        .home1{
+            width:500px;
+            color:white;
+            text-align:right;
+        }
+
+        .home1 h1{
+            font-size:60px;
+        }
+
+        .home1 span{
+            color:#FD5200;
+        }
+
+        .home1 p{
+            font-size:20px;
+            margin:20px 0;
+            opacity:0.8;
+        }
+
+        /* .home1 p:hover{
+            line-height: 1.5;
+            scale:1.2;
+            background-color:rgb(0, 187, 255);
+            border: 2px solid beige;
+            padding: 10px;
+            border-radius: 30px;
+        } */
+/* 
+        button{
+            padding:12px 30px;
+            border:none;
+            background:#FD5200;
+            color:white;
+            
+            font-size:18px;
+            border-radius:20px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:white;
+            color:black;
+        }
+        button:active{
+            transform: rotate(20deg);s
+        } */
+        
+        button{
+            padding:12px 30px;
+            border:none;
+            background:#FD5200;
+            /* color:black; */
+            /* font-size:
+            font-weight:; */
+            border-radius:20px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:white;
+            font-size: ;
+        }
+
+
+        
+
+        .section{
+            padding:80px;
+            text-align:center;
+        }
+
+        .section h2{
+            font-size:40px;
+            margin-bottom:30px;
+            color:#222;
+            border: 2px solid black;
+            display: inline-block;
+            padding: 10px;
+            border-radius: 20px;
+
+            animation: animate 5s ease-in infinite forwards;
+        }
+        @keyframes animate {
+            /* 0%{
+               transform: scale3d(2,2,1);
+            }             */
+        }
+        .section h2::first-letter{
+            color:#FD5200;
+        }
+
+
+
+       
+
+        .intro{
+            background:white;
+        }
+
+
+        .intro p,
+        .about p{
+            font-size:18px;
+            line-height:30px;
+        }
+        /* .intro p:hover::first-line,
+        .about p:hover::first-line{
+            font-size: xx-large;
+            color: brown;
+        } */
+
+
+
+       
+
+        .about{
+            background:#eee;
+        }
+
+
+
+       
+
+        .skills{
+            background:white;
+        }
+
+        .skill-box{
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            
+        }
+
+
+        .skill{
+            width:200px;
+            height:150px;
+            background:#222;
+            color:white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            font-size:22px;
+            border-radius:15px;
+            transition:0.5s;
+        }
+
+
+        .skill:hover{
+            transform:scale(1.1);
+            background:#FD5200;
+            color:black;
+        }
+
+
+
+      
+
+
+        .projects{
+            background:#eee;
+        }
+
+
+        .project-box{
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            flex-wrap:wrap;
+        }
+
+
+        .project{
+            width:300px;
+            height:250px;
+            background:white;
+            padding:20px;
+            border-radius:15px;
+            box-shadow:20px 20px 55px gray;
+            transition:0.5s;
+        }
+
+
+        .project:hover{
+            transform:translateY(20px);
+            padding: 20px;
+        }
+
+
+        .project h3{
+            margin:20px;
+        }
+        /* .A:hover{
+            animation: animate1 05s ease-out  infinite;
+
+        }
+        @keyframes animate1 {
+            0%{
+                border: 2px solid black;
+                border-radius: 20px;
+                padding: 20px;
+                
+            }
+            50%{
+                /* transform: rotate(200deg); */
+                transform: skew(10deg);
+
+            }
+            100%{
+                transform: translateY(50deg);
+            }
+        }
+        .B:hover{
+            animation: animate2 05s ease-in-out ;
+        }
+        @keyframes animate2{
+            0%{
+                border: 2px solid black;
+                border-radius: 20px;
+                padding: 20px;
+                
+            }
+            50%{
+                /* transform: rotate(200deg); */
+                transform: skew(10deg);
+
+            }
+            100%{
+                transform: translateY(50deg);
+            }
+        
+        } 
+
+
+
+        
+        .contact{
+            background-color:#222;
+        }
+        .contact h2,.contact p{
+            color: #eee;
+            font-weight:bolder;
+        }
+        .contact p:hover{
+            transform: scale(1.2);
+        }
+        
+
+    
+
+        /* Footer */
+
+        footer{
+            height: 100px;
+            background:black;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+        footer p{
+         font-size: xx-large;
+        
+        }
+
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- Navbar -->
+
+<div class="nav">
+
+    <div class="logo">
+        Portfolio
+    </div>
+
+    <div>
+        <a href="#home">Home</a>
+        <a href="#intro">Introduction</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+</div>
+
+
+
+<!-- Home -->
+
+<section class="home" id="home">
+
+    <div class="home1">
+
+        <h1>
+            Hi, I am <span>Jagan</span>
+        </h1>
+
+        <p>
+            Front End Developer creating modern and responsive websites
+            using HTML, CSS and JavaScript.
+        </p>
+
+        <button>
+            <h2>Download Cv</h2>
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- Introduction -->
+
+
+<section class="section intro" id="intro">
+
+<h2>Introduction</h2>
+
+<p>
+I am a passionate web developer interested in designing beautiful
+and user-friendly websites. I enjoy learning new technologies and
+creating creative web solutions. My goal is to build websites that
+provide a smooth user experience.
+</p>
+
+</section>
+
+
+
+
+<!-- About -->
+
+
+<section class="section about" id="about">
+
+<h2>About Me</h2>
+
+<p>
+I am a Front End Developer who specializes in creating responsive
+web pages. I have knowledge of HTML, CSS, JavaScript and modern
+web design concepts. I focus on writing clean code and building
+attractive layouts.
+</p>
+
+
+</section>
+
+
+
+
+
+<!-- Skills -->
+
+
+<section class="section skills" id="skills">
+
+<h2>My Skills</h2>
+
+
+<div class="skill-box">
+
+<div class="skill">
+HTML
+</div>
+
+
+<div class="skill">
+CSS
+</div>
+
+
+<div class="skill">
+JavaScript
+</div>
+
+
+<div class="skill">
+Bootstrap
+</div>
+
+
+<div class="skill">
+Responsive Design
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- Projects -->
+
+
+<section class="section projects" id="projects">
+
+
+<h2>My Projects</h2>
+
+
+<div class="project-box">
+
+
+<div class="project A">
+
+<h3>Portfolio Website</h3>
+
+<p>
+Created a personal portfolio website using HTML and CSS.
+</p>
+
+</div>
+
+
+
+<div class="project 2">
+
+<h3>CM Portal</h3>
+
+<p>
+Designed multiple sections including navbar, hero section,
+and about page.
+</p>
+
+</div>
+
+
+
+
+<div class="project B">
+
+<h3>Transport system </h3>
+
+<p>
+Created responsive web-based college transport system pages with animations and effects.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- Contact -->
+
+
+<section class="section contact" id="contact">
+
+<h2>Contact Me</h2>
+
+<p>Email : jagan@5182gmail.com</p>
+
+<p>Phone : +91 8688714349</p>
+
+<p>Location : India</p>
+
+
+</section>
+
+
+
+<footer>
+
+<p>
+&copy; 2026 Jagan Portfolio | All Rights Reserved
+</p>
+
+</footer>
+
+
+
+</body>
+</html>
